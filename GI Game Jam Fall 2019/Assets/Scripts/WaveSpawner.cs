@@ -19,10 +19,28 @@ public class WaveSpawner : MonoBehaviour
 
     public GameObject deathScreen;
 
+    public GameObject towerMenu;
+
+    public int numRedPixels;
+    public int numGreenPixels;
+    public int numBluePixels;
+
+    public Text redPixelText;
+    public Text greenPixelText;
+    public Text bluePixelText;
+
+    int enemyNumber = 0;
+
+    public void updatePixelText()
+    {
+        redPixelText.text = numRedPixels.ToString();
+        greenPixelText.text = numGreenPixels.ToString();
+        bluePixelText.text = numBluePixels.ToString();
+    }
 
     private void Start()
     {
-        setHealth();
+        playerDead();
     }
 
     public void turnOnDeathScreen()
@@ -40,9 +58,13 @@ public class WaveSpawner : MonoBehaviour
         }
 
         currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
+        numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
+        numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
+        numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
         whatWave = 0;
         playerHealth = 20;
         setHealth();
+        updatePixelText();
     }
 
     public void setHealth()
@@ -59,21 +81,27 @@ public class WaveSpawner : MonoBehaviour
         {
             for (int k = 0; k < targetWaves.waveList[whatWave].waveGroups[i].numberCircles; k++)
             {
-                Instantiate(circleEnemy, pathTemplates.startPosition, Quaternion.identity);
+                GameObject enemy = Instantiate(circleEnemy, pathTemplates.startPosition, Quaternion.identity);
+                enemy.GetComponent<Enemy>().enemyOrder = enemyNumber;
+                enemyNumber++;
 
                 yield return new WaitForSeconds(waitBetweenEnemies);
             }
 
             for (int k = 0; k < targetWaves.waveList[whatWave].waveGroups[i].numberTriangles; k++)
             {
-                Instantiate(triangleEnemy, pathTemplates.startPosition, Quaternion.identity);
+                GameObject enemy = Instantiate(triangleEnemy, pathTemplates.startPosition, Quaternion.identity);
+                enemy.GetComponent<Enemy>().enemyOrder = enemyNumber;
+                enemyNumber++;
 
                 yield return new WaitForSeconds(waitBetweenEnemies);
             }
 
             for (int k = 0; k < targetWaves.waveList[whatWave].waveGroups[i].numberSquares; k++)
             {
-                Instantiate(squareEnemy, pathTemplates.startPosition, Quaternion.identity);
+                GameObject enemy = Instantiate(squareEnemy, pathTemplates.startPosition, Quaternion.identity);
+                enemy.GetComponent<Enemy>().enemyOrder = enemyNumber;
+                enemyNumber++;
 
                 yield return new WaitForSeconds(waitBetweenEnemies);
             }
@@ -93,6 +121,10 @@ public class WaveSpawner : MonoBehaviour
             Destroy(currLevel);
             whatLevel++;
             currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
+            numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
+            numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
+            numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+            updatePixelText();
             whatWave = 0;
         }
     }

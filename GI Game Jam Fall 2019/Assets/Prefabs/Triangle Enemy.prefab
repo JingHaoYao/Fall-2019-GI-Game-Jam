@@ -72,8 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 2192450021786810173, guid: e342e3503d1aa2e44b8f6fb342ae8552,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfab4f49e76ee6441a078de802c2a8e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,6 +119,8 @@ MonoBehaviour:
   health: 3
   speed: 5
   what_path: 0
+  deathParticles: {fileID: 8585377272817485624, guid: 081d28bfd5c1357428817e07cb3aa6cf,
+    type: 3}
 --- !u!58 &6641482121407015164
 CircleCollider2D:
   m_ObjectHideFlags: 0

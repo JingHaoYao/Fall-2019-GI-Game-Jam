@@ -17,6 +17,9 @@ public class Enemy : MonoBehaviour
     Animator animator;
 
     WaveSpawner waveSpawner;
+    public GameObject deathParticles;
+
+    public int enemyOrder = 0;
   
     void Start()
     {
@@ -33,16 +36,26 @@ public class Enemy : MonoBehaviour
     {
         if (target_tile != null)
         {
-            float angle = Mathf.Atan2(
-                target_tile.transform.position.y - transform.position.y,
-                target_tile.transform.position.x - transform.position.x
-            );
-            rigidbody.velocity = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * speed;
-            transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rigidbody.velocity.y, rigidbody.velocity.x) * Mathf.Rad2Deg);
-
-            if (Vector2.Distance(transform.position, target_tile.transform.position) < 0.05f)
+            if (health > 0)
             {
-                target_tile = target_tile.nextTile;
+                float angle = Mathf.Atan2(
+                    target_tile.transform.position.y - transform.position.y,
+                    target_tile.transform.position.x - transform.position.x
+                );
+                rigidbody.velocity = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * speed;
+                if (Vector2.Distance(transform.position, target_tile.transform.position) > 0.1f)
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rigidbody.velocity.y, rigidbody.velocity.x) * Mathf.Rad2Deg);
+                }
+
+                if (Vector2.Distance(transform.position, target_tile.transform.position) < 0.05f)
+                {
+                    target_tile = target_tile.nextTile;
+                }
+            }
+            else
+            {
+                rigidbody.velocity = Vector2.zero;
             }
         }
         else
@@ -83,6 +96,7 @@ public class Enemy : MonoBehaviour
             {
                 //kill thing
                 animator.SetTrigger("Death");
+                Instantiate(deathParticles, transform.position, Quaternion.identity);
                 Destroy(gameObject, 1f);
             }
         }
