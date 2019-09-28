@@ -119,6 +119,8 @@ MonoBehaviour:
   health: 3
   speed: 5
   what_path: 0
+  deathParticles: {fileID: 8585377272817485624, guid: 081d28bfd5c1357428817e07cb3aa6cf,
+    type: 3}
 --- !u!58 &6641482121407015164
 CircleCollider2D:
   m_ObjectHideFlags: 0

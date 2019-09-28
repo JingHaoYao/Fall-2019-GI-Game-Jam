@@ -19,4 +19,8 @@ public class WaveInfo : MonoBehaviour
     }
 
     public Wave[] waveList;
+
+    public int startingRedPixels;
+    public int startingGreenPixels;
+    public int startingBluePixels;
 }
