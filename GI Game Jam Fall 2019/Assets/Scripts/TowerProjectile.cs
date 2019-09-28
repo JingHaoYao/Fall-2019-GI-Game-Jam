@@ -5,5 +5,17 @@ using UnityEngine;
 public class TowerProjectile : MonoBehaviour
 {
     public int damage;
-    public int speed;
+    public float speed;
+    public int Direction;
+    new Rigidbody2D rigidbody;
+
+    private void Start()
+    {
+        rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+    
+    }
 }
