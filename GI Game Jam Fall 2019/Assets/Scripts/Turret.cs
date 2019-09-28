@@ -13,8 +13,7 @@ public class Turret : MonoBehaviour
 
     public float Reloading; //Active variables
     public GameObject Bullet;
-    public int Quadrant;
-    public int LowestTarget = 9999;
+    public int LowestTarget = 99999;
 
     GameObject currentTarget;
 
@@ -36,7 +35,6 @@ public class Turret : MonoBehaviour
                 Bullet.transform.rotation = transform.rotation;
                 Bullet.GetComponent<TowerProjectile>().damage = BulletDamage;
                 Bullet.GetComponent<TowerProjectile>().speed = BulletSpeed;
-                Bullet.GetComponent<TowerProjectile>().Direction = Quadrant;
                 Bullet.transform.position = transform.position;
                 Reloading = ReloadTime;
             }
@@ -51,12 +49,9 @@ public class Turret : MonoBehaviour
     {
         if (Target.gameObject.GetComponent<Enemy>())
         {
-            if (currentTarget.gameObject.GetComponent<Enemy>().Order <= LowestTarget)
+            if (Target.gameObject.GetComponent<Enemy>().enemyOrder <= LowestTarget)
             {
-                currentTarget.gameObject.GetComponent<Enemy>().Order = LowestTarget;
-            }
-            if (currentTarget.gameObject.GetComponent<Enemy>().Order == LowestTarget)
-            {
+                LowestTarget = Target.gameObject.GetComponent<Enemy>().enemyOrder;
                 currentTarget = Target.gameObject;
             }
         }
@@ -67,7 +62,7 @@ public class Turret : MonoBehaviour
         if(collision.gameObject == currentTarget)
         {
             currentTarget = null;
-            LowestTarget = 9999;
+            LowestTarget = 99999;
         }
     } 
 }

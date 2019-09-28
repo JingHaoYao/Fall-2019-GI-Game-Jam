@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public int health;
     public int speed;
     public int what_path;
-    public int Order;
     Rigidbody2D rigidbody;
 
     PathTemplate path_template;
