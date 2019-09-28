@@ -14773,7 +14773,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2700667743a8846219999604e3b3b42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Turrets: []
+=======
+  Turrets:
+  - {fileID: 4232922614387008802, guid: b17c097b64cb94cf1ba1d7fc5df939ae, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+>>>>>>> b5ade8acb7a5d2e3f93412baeccd5089d8d9dc1f
 --- !u!4 &1276378440
 Transform:
   m_ObjectHideFlags: 0
