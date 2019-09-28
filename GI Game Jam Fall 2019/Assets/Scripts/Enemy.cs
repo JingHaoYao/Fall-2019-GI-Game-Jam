@@ -60,6 +60,7 @@ public class Enemy : MonoBehaviour
         else
         {
             waveSpawner.playerHealth--;
+            waveSpawner.GetComponents<AudioSource>()[0].Play();
             if(waveSpawner.playerHealth <= 0)
             {
                 waveSpawner.turnOnDeathScreen();
@@ -79,9 +80,7 @@ public class Enemy : MonoBehaviour
             spriteRenderer.color = Color.red;
             yield return new WaitForSeconds(0.1f);
             spriteRenderer.color = Color.white;
-
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -91,7 +90,7 @@ public class Enemy : MonoBehaviour
             health -= collision.gameObject.GetComponent<TowerProjectile>().damage;
             StartCoroutine(hitFrame());
 
-            if(health <= 0)
+            if (health <= 0)
             {
                 //kill thing
                 animator.SetTrigger("Death");
