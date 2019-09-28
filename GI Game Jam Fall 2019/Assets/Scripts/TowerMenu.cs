@@ -11,15 +11,18 @@ public class TowerMenu : MonoBehaviour
     public int numberBluePixels;
     public int numberGreenPixels;
     public WaveSpawner wavespawner;
+    public TowerList TowerList;
     public TowerTile targetTile;
 
     public GameObject particles;
+    public GameObject Turret;
 
     int currentTile;
 
     void Start()
     {
         wavespawner = FindObjectOfType<WaveSpawner>();
+        TowerList = FindObjectOfType<TowerList>();
     }
 
     public void addIcon(int whatPixel)
@@ -55,7 +58,10 @@ public class TowerMenu : MonoBehaviour
         {
             StartCoroutine(craft());
             targetTile.clicked = false;
-            // need to add crafting towers targetTile.tower = 
+            if (numberBluePixels == 3)
+            {
+                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[0];
+            }
         }
     }
 
@@ -69,6 +75,10 @@ public class TowerMenu : MonoBehaviour
             }
             yield return new WaitForSeconds(.05f);
         }
+        Turret = Instantiate(targetTile.tower);
+        Turret.transform.parent = targetTile.transform;
+        Turret.transform.localPosition = new Vector3(0, 0, 0);
+        Turret.transform.localScale = new Vector3(1, 1, 1);
         Instantiate(particles, targetTile.transform.position, Quaternion.identity);
         this.gameObject.SetActive(false);
     }
