@@ -30,7 +30,7 @@ public class TowerTile : Tile
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && tower == null)
         {
             if (clicked == false)
             {

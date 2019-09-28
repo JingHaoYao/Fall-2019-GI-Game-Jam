@@ -127,6 +127,26 @@ public class WaveSpawner : MonoBehaviour
             updatePixelText();
             whatWave = 0;
         }
+        else
+        {
+            for(int i = 0; i < currLevel.GetComponentInChildren<WaveInfo>().numberPixelsToAdd; i++)
+            {
+                int whatPixel = Random.Range(0, 3);
+                if (whatPixel == 0)
+                {
+                    numRedPixels++;
+                }
+                else if(whatPixel == 1)
+                {
+                    numBluePixels++;
+                }
+                else
+                {
+                    numGreenPixels++;
+                }
+            }
+            updatePixelText();
+        }
     }
 
     public void startWave()

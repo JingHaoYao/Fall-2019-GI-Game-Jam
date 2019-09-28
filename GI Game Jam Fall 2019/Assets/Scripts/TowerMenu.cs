@@ -62,6 +62,18 @@ public class TowerMenu : MonoBehaviour
             {
                 targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[0];
             }
+            else if (numberRedPixels == 3)
+            {
+                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[2];
+            }
+            else if (numberGreenPixels == 3)
+            {
+                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[1];
+            }
+            else if(numberGreenPixels == 1 && numberRedPixels == 1 && numberBluePixels == 1)
+            {
+                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[3];
+            }
         }
     }
 
@@ -111,5 +123,6 @@ public class TowerMenu : MonoBehaviour
             wavespawner.numGreenPixels += numberGreenPixels;
             wavespawner.updatePixelText();
         }
+        currentTile = 0;
     }
 }

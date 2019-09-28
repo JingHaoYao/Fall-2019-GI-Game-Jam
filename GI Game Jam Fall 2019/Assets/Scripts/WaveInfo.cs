@@ -23,4 +23,6 @@ public class WaveInfo : MonoBehaviour
     public int startingRedPixels;
     public int startingGreenPixels;
     public int startingBluePixels;
+
+    public int numberPixelsToAdd = 4;
 }

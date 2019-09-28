@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 400244901075376045}
   - component: {fileID: 400244901075376046}
   - component: {fileID: 400244901075376044}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GGG Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

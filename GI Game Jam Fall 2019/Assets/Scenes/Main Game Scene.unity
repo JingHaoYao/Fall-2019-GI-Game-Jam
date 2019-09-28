@@ -4484,7 +4484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &483872680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10789,9 +10789,56 @@ MonoBehaviour:
       numberTriangles: 2
       numberSquares: 0
     waitInterval: 2
+  - waveGroups:
+    - numberCircles: 5
+      numberTriangles: 0
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 2
+    - numberCircles: 0
+      numberTriangles: 3
+      numberSquares: 0
+    waitInterval: 2
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 8
+      numberSquares: 3
+    waitInterval: 2
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 3
+      numberSquares: 1
+    - numberCircles: 0
+      numberTriangles: 3
+      numberSquares: 1
+    - numberCircles: 0
+      numberTriangles: 3
+      numberSquares: 1
+    - numberCircles: 0
+      numberTriangles: 3
+      numberSquares: 1
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 15
+      numberTriangles: 0
+      numberSquares: 0
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 8
+      numberTriangles: 4
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 4
+      numberSquares: 4
+    - numberCircles: 0
+      numberTriangles: 12
+      numberSquares: 0
+    waitInterval: 3
   startingRedPixels: 3
   startingGreenPixels: 3
   startingBluePixels: 3
+  numberPixelsToAdd: 2
 --- !u!1 &694708132
 GameObject:
   m_ObjectHideFlags: 0
@@ -14773,14 +14820,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2700667743a8846219999604e3b3b42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Turrets: []
-=======
   Turrets:
   - {fileID: 4232922614387008802, guid: b17c097b64cb94cf1ba1d7fc5df939ae, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
->>>>>>> b5ade8acb7a5d2e3f93412baeccd5089d8d9dc1f
+  - {fileID: 400244901075376042, guid: 27d95a2ad2d161c46b1ca901da1766d1, type: 3}
+  - {fileID: 6584764741343345514, guid: f0ac20d009fa4a448a3fdd87027caf39, type: 3}
+  - {fileID: 4128103366869179364, guid: 11d4d644767fe0c42901e769d172aaf3, type: 3}
 --- !u!4 &1276378440
 Transform:
   m_ObjectHideFlags: 0

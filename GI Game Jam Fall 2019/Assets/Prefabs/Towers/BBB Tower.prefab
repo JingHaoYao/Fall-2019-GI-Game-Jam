@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4232922614387008804}
   - component: {fileID: 4232922614387008809}
   - component: {fileID: 2099560700}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BBB Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,6 +104,7 @@ MonoBehaviour:
   Reloading: 0
   Bullet: {fileID: 0}
   LowestTarget: 99999
+  waitTimeTillFire: 0
 --- !u!58 &4232922614387008804
 CircleCollider2D:
   m_ObjectHideFlags: 0
