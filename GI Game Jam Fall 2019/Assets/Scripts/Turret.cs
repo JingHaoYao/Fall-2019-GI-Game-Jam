@@ -35,6 +35,7 @@ public class Turret : MonoBehaviour
                 Bullet.transform.rotation = transform.rotation;
                 Bullet.GetComponent<TowerProjectile>().damage = BulletDamage;
                 Bullet.GetComponent<TowerProjectile>().speed = BulletSpeed;
+                Bullet.GetComponent<TowerProjectile>().direction = angle;
                 Bullet.transform.position = transform.position;
                 Reloading = ReloadTime;
             }
@@ -42,6 +43,10 @@ public class Turret : MonoBehaviour
             {
                 Reloading -= Time.deltaTime;
             }
+        }
+        else
+        {
+            LowestTarget = 99999;
         }
     }
 
@@ -59,6 +64,7 @@ public class Turret : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        Debug.Log("exited");
         if(collision.gameObject == currentTarget)
         {
             currentTarget = null;
