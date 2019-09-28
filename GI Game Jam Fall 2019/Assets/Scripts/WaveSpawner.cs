@@ -19,10 +19,27 @@ public class WaveSpawner : MonoBehaviour
 
     public GameObject deathScreen;
 
+    public GameObject towerMenu;
+
+    public int numRedPixels;
+    public int numGreenPixels;
+    public int numBluePixels;
+
+    public Text redPixelText;
+    public Text greenPixelText;
+    public Text bluePixelText;
+
+    public void updatePixelText()
+    {
+        redPixelText.text = numRedPixels.ToString();
+        greenPixelText.text = numGreenPixels.ToString();
+        bluePixelText.text = numBluePixels.ToString();
+    }
 
     private void Start()
     {
         setHealth();
+        updatePixelText();
     }
 
     public void turnOnDeathScreen()
