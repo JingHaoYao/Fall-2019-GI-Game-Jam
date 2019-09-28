@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4232922614387008807}
   - component: {fileID: 4232922614387008804}
   - component: {fileID: 4232922614387008809}
+  - component: {fileID: 2099560700}
   m_Layer: 0
   m_Name: BBB Tower
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4232922614387008802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 5
   m_Sprite: {fileID: 719872535835914870, guid: e4fdd57685a274e66a7418cd8c2031da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,12 +95,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 0.1
+  ReloadTime: 1
   RangeValue: 2
-  BulletDamage: 9
+  BulletDamage: 5
   BulletType: {fileID: 309346126122169637, guid: 9795904166ae042e1b16345e04d8e9f9,
     type: 3}
-  BulletSpeed: 10
+  BulletSpeed: 20
   Reloading: 0
   Bullet: {fileID: 0}
   LowestTarget: 99999
@@ -140,3 +141,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &2099560700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232922614387008802}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1da75688c31dab4f9d1bb916bb0dca6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

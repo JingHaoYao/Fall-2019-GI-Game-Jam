@@ -92,6 +92,7 @@ public class Enemy : MonoBehaviour
 
             if (health <= 0)
             {
+                this.GetComponent<Collider2D>().enabled = false;
                 //kill thing
                 animator.SetTrigger("Death");
                 Instantiate(deathParticles, transform.position, Quaternion.identity);

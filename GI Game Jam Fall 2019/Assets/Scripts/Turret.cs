@@ -15,12 +15,26 @@ public class Turret : MonoBehaviour
     public GameObject Bullet;
     public int LowestTarget = 99999;
 
+    public float waitTimeTillFire = 0;
+
     GameObject currentTarget;
 
     private void Start()
     {
         Range = GetComponent<CircleCollider2D>();
         Range.radius = RangeValue;
+    }
+    
+    IEnumerator fireBullet(float angle)
+    {
+        GetComponent<Animator>().SetTrigger("Fire");
+        yield return new WaitForSeconds(waitTimeTillFire);
+        Bullet = Instantiate(BulletType);
+        Bullet.transform.rotation = transform.rotation;
+        Bullet.GetComponent<TowerProjectile>().damage = BulletDamage;
+        Bullet.GetComponent<TowerProjectile>().speed = BulletSpeed;
+        Bullet.GetComponent<TowerProjectile>().direction = angle;
+        Bullet.transform.position = transform.position;
     }
 
     private void Update()
@@ -31,12 +45,7 @@ public class Turret : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, angle);
             if (Reloading <= 0)
             {
-                Bullet = Instantiate(BulletType);
-                Bullet.transform.rotation = transform.rotation;
-                Bullet.GetComponent<TowerProjectile>().damage = BulletDamage;
-                Bullet.GetComponent<TowerProjectile>().speed = BulletSpeed;
-                Bullet.GetComponent<TowerProjectile>().direction = angle;
-                Bullet.transform.position = transform.position;
+                StartCoroutine(fireBullet(angle));
                 Reloading = ReloadTime;
             }
             else
@@ -64,7 +73,6 @@ public class Turret : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("exited");
         if(collision.gameObject == currentTarget)
         {
             currentTarget = null;

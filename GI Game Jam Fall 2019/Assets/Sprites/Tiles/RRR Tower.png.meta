@@ -115,17 +115,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 142.66666
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.3880222, y: 0.3899201}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb19cf32a9de44e2b8023622d8829cc3
+      spriteID: 1e34d1ceb6f5e6b49850c7ebf4cdb9eb
       internalID: -3365490522183047398
       vertices: []
       indices: 
@@ -135,18 +135,18 @@ TextureImporter:
       name: RRR Tower_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 71
+        y: 142.66666
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.28743204, y: 0.38612407}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60a9bae55dc7e42d2963b574152d4bd1
+      spriteID: 497325cffeb3eee43a2b4bb057ac0a10
       internalID: 3490256452956430602
       vertices: []
       indices: 
@@ -156,18 +156,18 @@ TextureImporter:
       name: RRR Tower_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 142.66666
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.19063738, y: 0.3937159}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb2625cfa83e4cacae240290ebbc9bd
+      spriteID: b649f2828a31e2148bf3cb941be2c2f0
       internalID: -9081901037161812105
       vertices: []
       indices: 
@@ -178,17 +178,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 71.666664
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.38521132, y: 0.4906926}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add3d12bed6bd401ba4d53aa75c5b489
+      spriteID: 57877a93f305ca041a34736c6cd97836
       internalID: 2764481703224726810
       vertices: []
       indices: 
@@ -198,18 +198,18 @@ TextureImporter:
       name: RRR Tower_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 71
+        y: 72
+        width: 71
+        height: 71
+      alignment: 9
+      pivot: {x: 0.28748584, y: 0.49224374}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dee4657cab9624212ba4f7c8b3e6ae43
+      spriteID: 6a1d9a9971b58db42b800131ff29e7f4
       internalID: -5271929623326707789
       vertices: []
       indices: 
@@ -219,18 +219,18 @@ TextureImporter:
       name: RRR Tower_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 71.666664
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.18931201, y: 0.49112308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 042c63c8f5d81457aa1940209a1374e0
+      spriteID: 9661cb62dfdc79a4b8e895d4e1a2b761
       internalID: 3919506022074334439
       vertices: []
       indices: 
@@ -241,17 +241,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0.6666641
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.35768822, y: 0.58201}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb190e69ff4274c34ab0a59fa2d2c966
+      spriteID: 6dc2b9acc49f1d3459e7957958bdec12
       internalID: -8572378739747229929
       vertices: []
       indices: 
@@ -261,18 +261,18 @@ TextureImporter:
       name: RRR Tower_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 71
+        y: 0.6666641
+        width: 71.333336
+        height: 71.333336
+      alignment: 9
+      pivot: {x: 0.25890192, y: 0.58767205}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 809bce78622734887b7c56c2d0b9c54a
+      spriteID: 7a546b90f7659284b88c0da78d4264d4
       internalID: -5643574825384892928
       vertices: []
       indices: 
@@ -282,18 +282,18 @@ TextureImporter:
       name: RRR Tower_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 141
+        y: 1
+        width: 71
+        height: 71
+      alignment: 9
+      pivot: {x: 0.17578039, y: 0.58712023}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d2d85ad8a2d43b48bdffa5ea76ea26
+      spriteID: e17b0521ded6caf499bf862bce1fd0b5
       internalID: -4721128454395296184
       vertices: []
       indices: 

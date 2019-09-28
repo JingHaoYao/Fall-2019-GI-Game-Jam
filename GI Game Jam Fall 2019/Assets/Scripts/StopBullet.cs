@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : TowerProjectile
+public class StopBullet : TowerProjectile
 {
+    public float range = 0.6f;
+    Vector3 startPos;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,12 +19,13 @@ public class Bullet : TowerProjectile
 
     private void Start()
     {
+        startPos = transform.position;
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if (Vector2.Distance(Camera.main.transform.position, transform.position) > 20)
+        if (Vector2.Distance(Camera.main.transform.position, transform.position) > 20 || (Vector2.Distance(startPos, transform.position) > range))
         {
             Destroy(this.gameObject);
         }
