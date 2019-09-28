@@ -12,6 +12,10 @@ public class Enemy : MonoBehaviour
     PathTemplate path_template;
     Path path_to_follow;
     PathTile target_tile;
+    SpriteRenderer spriteRenderer;
+    Animator animator;
+
+    WaveSpawner waveSpawner;
   
     void Start()
     {
@@ -19,6 +23,9 @@ public class Enemy : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         path_to_follow = path_template.paths[0];
         target_tile = path_to_follow.path[0];
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        waveSpawner = FindObjectOfType<WaveSpawner>();
     }
 
     void Update()
@@ -30,6 +37,7 @@ public class Enemy : MonoBehaviour
                 target_tile.transform.position.x - transform.position.x
             );
             rigidbody.velocity = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * speed;
+            transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rigidbody.velocity.y, rigidbody.velocity.x) * Mathf.Rad2Deg);
 
             if (Vector2.Distance(transform.position, target_tile.transform.position) < 0.05f)
             {
@@ -38,7 +46,44 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            waveSpawner.playerHealth--;
+            if(waveSpawner.playerHealth <= 0)
+            {
+                waveSpawner.turnOnDeathScreen();
+            }
+
+            waveSpawner.setHealth();
+            Destroy(this.gameObject);
             rigidbody.velocity = Vector2.zero;
+        }
+    }
+
+
+    IEnumerator hitFrame()
+    {
+        for(int i = 0; i < 2; i++)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
+
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<TowerProjectile>() && health > 0)
+        {
+            health -= collision.gameObject.GetComponent<TowerProjectile>().damage;
+            StartCoroutine(hitFrame());
+
+            if(health <= 0)
+            {
+                //kill thing
+                animator.SetTrigger("Death");
+                Destroy(gameObject, 1f);
+            }
         }
     }
 }
