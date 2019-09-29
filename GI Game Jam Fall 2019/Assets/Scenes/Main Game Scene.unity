@@ -14973,16 +14973,12 @@ MonoBehaviour:
   - {fileID: 400244901075376042, guid: 27d95a2ad2d161c46b1ca901da1766d1, type: 3}
   - {fileID: 6584764741343345514, guid: f0ac20d009fa4a448a3fdd87027caf39, type: 3}
   - {fileID: 4128103366869179364, guid: 11d4d644767fe0c42901e769d172aaf3, type: 3}
-<<<<<<< HEAD
-  - {fileID: 0}
   - {fileID: 8835114225902824668, guid: 2c4b5b608b17d44c8a2678b7822d12dc, type: 3}
-=======
   - {fileID: 147504257320481523, guid: b195cb4d5a06aed4ab221c367e741412, type: 3}
-  - {fileID: 0}
   - {fileID: 942880313591520769, guid: 252690accafee854aaa29ce52fb13f3e, type: 3}
   - {fileID: 2912463901732199933, guid: 39306896b26f31e4ba3a0d821217f60a, type: 3}
   - {fileID: 522566534159015148, guid: c7a2fc10b6312bd42b8abd5e6ef83538, type: 3}
->>>>>>> d65914e3db43b17690bfb232f1f7e141c8d1287b
+  - {fileID: 8922840105268015461, guid: ef4d157ad603c4764832e63c02e9b7fb, type: 3}
 --- !u!4 &1276378440
 Transform:
   m_ObjectHideFlags: 0
@@ -14995,7 +14991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280021624
 GameObject:

@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -5236653880294419292
     second: GGB Tower_10
+  - first:
+      213: -4463879022088682010
+    second: GGB Tower_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -121,17 +124,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 202
+        width: 71
+        height: 68
+      alignment: 9
+      pivot: {x: 0.48092693, y: 0.42331314}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eb6f6866c3de405a8b3b1dc86b7c725
+      spriteID: 7ef8e6a9726574673a29b3e7ee659367
       internalID: 4411635926528088006
       vertices: []
       indices: 
@@ -141,18 +144,18 @@ TextureImporter:
       name: GGB Tower_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 71
+        y: 202
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 68
+      alignment: 9
+      pivot: {x: 0.4160392, y: 0.4217446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc5c2075a67cf400e924969b994adf3b
+      spriteID: 3c5e43b35d4764686b52667984e663c0
       internalID: -808370471731611966
       vertices: []
       indices: 
@@ -162,18 +165,18 @@ TextureImporter:
       name: GGB Tower_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 135
+        y: 202
+        width: 69
+        height: 68
+      alignment: 9
+      pivot: {x: 0.3875703, y: 0.41271544}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4f13e2235f642e39fdfacc99443036
+      spriteID: 83b44025403bb4154a06ffbbccbf443c
       internalID: -3372799198070440075
       vertices: []
       indices: 
@@ -184,17 +187,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 136
+        width: 71
+        height: 68
+      alignment: 9
+      pivot: {x: 0.47807392, y: 0.44936302}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84d31a73ccaff44ca984ed7f348378c9
+      spriteID: cf45cfb29544442649f014772e83a35a
       internalID: -5587229601054888228
       vertices: []
       indices: 
@@ -204,18 +207,18 @@ TextureImporter:
       name: GGB Tower_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 71
+        y: 135
+        width: 67
+        height: 68
+      alignment: 9
+      pivot: {x: 0.4070601, y: 0.46794936}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a1afde417d143e499b5eda27767b7b
+      spriteID: da27b6e31d4134ad68edbffac9732773
       internalID: -6628343532094949534
       vertices: []
       indices: 
@@ -225,18 +228,18 @@ TextureImporter:
       name: GGB Tower_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
+        x: 137
+        y: 136
+        width: 68
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.37179744, y: 0.44505602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4922f4a1c095484a95ac60877811e4c
+      spriteID: 7f3802382148f4025b045e226d685954
       internalID: -5650446758675066475
       vertices: []
       indices: 
@@ -247,9 +250,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 68
+        width: 71
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,7 +260,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35050fda6d4d548ba9408d2a2baad4b1
+      spriteID: 6dd9513c87e454557a827477c39521a3
       internalID: -2249377681561967304
       vertices: []
       indices: 
@@ -267,10 +270,10 @@ TextureImporter:
       name: GGB Tower_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 68
+        y: 68.5
+        width: 68.666664
+        height: 67.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,7 +281,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34811b23859134a3f85a20941d63aaec
+      spriteID: a9b2f6cfea478460388a811ddfd327d9
       internalID: 6749324924088234212
       vertices: []
       indices: 
@@ -288,10 +291,10 @@ TextureImporter:
       name: GGB Tower_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 136
+        y: 68.5
+        width: 68.666664
+        height: 67.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,7 +302,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8bc9f62888b54959a3b6291dcb84049
+      spriteID: 89bcce5a8746c430eb95505a1e2cdae4
       internalID: -883295430071050364
       vertices: []
       indices: 
@@ -310,9 +313,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
+        y: 1.5
+        width: 68.666664
+        height: 67.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81b6f4301216a4355b2a3834ac2f0448
+      spriteID: dd3a575ab53c941ba9c4e05bb210a605
       internalID: 6518879286956449817
       vertices: []
       indices: 
@@ -330,10 +333,10 @@ TextureImporter:
       name: GGB Tower_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 68
+        y: 1.5
+        width: 68.666664
+        height: 67.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,8 +344,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65c4e19606ef44072984014486397dc8
+      spriteID: 35ca1feb3c39948868f39850cd7d2987
       internalID: -5236653880294419292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGB Tower_11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1.5
+        width: 68.666664
+        height: 67.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73e002a4873e45e8bc1f37b9c5ed343
+      internalID: -4463879022088682010
       vertices: []
       indices: 
       edges: []
