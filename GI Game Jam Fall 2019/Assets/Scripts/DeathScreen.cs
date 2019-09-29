@@ -29,6 +29,7 @@ public class DeathScreen : MonoBehaviour
         deathIcon.gameObject.SetActive(false);
         waveSpawner.playerDead();
         yield return new WaitForSeconds(1f);
+        FindObjectOfType<MusicManager>().fadeIn(0);
         this.gameObject.SetActive(false);
     }
 

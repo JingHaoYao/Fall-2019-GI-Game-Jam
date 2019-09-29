@@ -904,8 +904,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864456678214876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,8 +2064,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864456859159610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,8 +2569,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864456901086881
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,8 +3294,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457021664493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,8 +3423,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457048365340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,8 +3518,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457054816997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,8 +3993,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457098584258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,8 +4183,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457127214213
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,8 +4278,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457133864368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,8 +4848,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457183108862
 GameObject:
   m_ObjectHideFlags: 0
@@ -5563,8 +5543,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457322689436
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,8 +6018,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457395504619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,8 +6303,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457409155507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6709,8 +6683,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457442999310
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,8 +7063,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457568127531
 GameObject:
   m_ObjectHideFlags: 0
@@ -7857,8 +7827,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ebd950087818b1e47ab18cd54f48d827, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 15ef15b18f4935c4db8eb4fe50ccf152, type: 3}
+  m_Color: {r: 0.26415092, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7883,8 +7853,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457727599484
 GameObject:
   m_ObjectHideFlags: 0
@@ -8916,8 +8884,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864457930299346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9298,8 +9264,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458046249053
 GameObject:
   m_ObjectHideFlags: 0
@@ -9395,8 +9359,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458063265396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9967,8 +9929,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458152368086
 GameObject:
   m_ObjectHideFlags: 0
@@ -10349,8 +10309,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458185855083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11996,8 +11954,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458426497256
 GameObject:
   m_ObjectHideFlags: 0
@@ -12568,8 +12524,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458519512862
 GameObject:
   m_ObjectHideFlags: 0
@@ -12760,8 +12714,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458578197260
 GameObject:
   m_ObjectHideFlags: 0
@@ -13077,8 +13029,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &136864458604282575
 GameObject:
   m_ObjectHideFlags: 0
@@ -13459,8 +13409,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1001 &1290101543803928019
 PrefabInstance:
   m_ObjectHideFlags: 0

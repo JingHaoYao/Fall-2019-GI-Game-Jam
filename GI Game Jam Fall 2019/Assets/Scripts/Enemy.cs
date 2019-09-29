@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     public int whatPathToFollow = 0;
 
     int currTileReached = 0;
-  
+ 
     void Start()
     {
         path_template = FindObjectOfType<PathTemplate>();

@@ -257,7 +257,12 @@ public class TowerMenu : MonoBehaviour
 
     private void OnDisable()
     {
-        if(currentTile < 3 && targetTile.tower == null)
+        returnPixels();
+    }
+
+    public void returnPixels()
+    {
+        if (currentTile < 3 && targetTile.tower == null)
         {
             wavespawner.numRedPixels += numberRedPixels;
             wavespawner.numBluePixels += numberBluePixels;

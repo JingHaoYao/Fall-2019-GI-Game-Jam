@@ -40,7 +40,17 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
-        playerDead();
+        whatLevel = 0;
+
+        currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
+        numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
+        numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
+        numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+        targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
+        whatWaveCurrent = 0;
+        playerHealth = 20;
+        setHealth();
+        updatePixelText();
     }
 
     public void turnOnDeathScreen()
@@ -50,6 +60,7 @@ public class WaveSpawner : MonoBehaviour
 
     public void playerDead()
     {
+        FindObjectOfType<MusicManager>().fadeOut(whatLevel);
         whatLevel = 0;
         Destroy(currLevel);
         foreach(Enemy enemy in FindObjectsOfType<Enemy>())
@@ -121,6 +132,8 @@ public class WaveSpawner : MonoBehaviour
         {
             Destroy(currLevel);
             whatLevel++;
+            FindObjectOfType<MusicManager>().fadeOut(whatLevel - 1);
+            FindObjectOfType<MusicManager>().fadeIn(whatLevel);
             whatWaveCurrent = 0;
             currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
             numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;

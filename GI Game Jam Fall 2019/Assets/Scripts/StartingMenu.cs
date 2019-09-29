@@ -6,6 +6,7 @@ public class StartingMenu : MonoBehaviour
 {
     public void turnOffMenu()
     {
+        FindObjectOfType<MusicManager>().fadeIn(0);
         this.gameObject.SetActive(false);
     }
 }
