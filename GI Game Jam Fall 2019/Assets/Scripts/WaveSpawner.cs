@@ -154,5 +154,6 @@ public class WaveSpawner : MonoBehaviour
         StartCoroutine(spawnWave(whatWave));
         button.SetActive(false);
         whatWave++;
+        GetComponents<AudioSource>()[1].Play();
     }
 }

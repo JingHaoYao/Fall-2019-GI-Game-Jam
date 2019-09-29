@@ -72,6 +72,11 @@ public class TowerTile : Tile
         }
     }
 
+    void OnMouseExit()
+    {
+        rangeMeter.transform.localScale = new Vector3(0, 0);
+    }
+
     private void OnDestroy()
     {
         rangeMeter.transform.position = new Vector3(-100, 0);

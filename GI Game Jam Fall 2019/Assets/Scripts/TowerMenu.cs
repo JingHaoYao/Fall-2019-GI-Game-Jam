@@ -32,7 +32,7 @@ public class TowerMenu : MonoBehaviour
             {
                 imageList[currentTile].enabled = true;
                 imageList[currentTile].sprite = pixelIcons[whatPixel - 1];
-
+                GetComponents<AudioSource>()[0].Play();
                 switch (whatPixel)
                 {
                     case 1:
@@ -51,11 +51,16 @@ public class TowerMenu : MonoBehaviour
             }
             currentTile++;
         }
+        else
+        {
+            GetComponents<AudioSource>()[2].Play();
+        }
 
         wavespawner.updatePixelText();
 
         if(currentTile == 3)
         {
+            GetComponents<AudioSource>()[1].Play();
             StartCoroutine(craft());
             targetTile.clicked = false;
             if (numberBluePixels == 3)
@@ -128,6 +133,7 @@ public class TowerMenu : MonoBehaviour
         Turret.transform.localPosition = new Vector3(0, 0, 0);
         Turret.transform.localScale = new Vector3(1, 1, 1);
         Instantiate(particles, targetTile.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(.025f);
         this.gameObject.SetActive(false);
     }
 
@@ -137,7 +143,7 @@ public class TowerMenu : MonoBehaviour
         {
             icon.enabled = false;
         }
-
+        GetComponents<AudioSource>()[0].Play();
         numberGreenPixels = 0;
         numberBluePixels = 0;
         numberRedPixels = 0;

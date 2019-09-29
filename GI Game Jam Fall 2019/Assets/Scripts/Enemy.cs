@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health;
-    public int speed;
+    public float speed;
     public int what_path;
     Rigidbody2D rigidbody;
 
@@ -97,9 +97,11 @@ public class Enemy : MonoBehaviour
                 this.GetComponent<Collider2D>().enabled = false;
                 //kill thing
                 animator.SetTrigger("Death");
+                GetComponents<AudioSource>()[0].Play();
                 Instantiate(deathParticles, transform.position, Quaternion.identity);
                 Destroy(gameObject, 1f);
             }
+            GetComponents<AudioSource>()[1].Play();
         }
     }
 }

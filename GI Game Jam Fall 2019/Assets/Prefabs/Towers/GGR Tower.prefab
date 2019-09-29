@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8835114225902824657}
-  - component: {fileID: 8835114225902824670}
   - component: {fileID: 8835114225902824671}
+  - component: {fileID: 8835114225902824670}
   - component: {fileID: 8835114225902824659}
   - component: {fileID: 8835114225902824656}
   - component: {fileID: 2358200723902197151}
@@ -35,6 +35,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8835114225902824671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835114225902824668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1.2
+  RangeValue: 0.8
+  BulletDamage: 3
+  BulletType: {fileID: 3761614092464365788, guid: ebfeda361faa141f6bfe0031d45254bc,
+    type: 3}
+  BulletSpeed: 2
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.5333
 --- !u!212 &8835114225902824670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84,28 +106,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8835114225902824671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835114225902824668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadTime: 1.2
-  RangeValue: 0.8
-  BulletDamage: 4
-  BulletType: {fileID: 3761614092464365788, guid: ebfeda361faa141f6bfe0031d45254bc,
-    type: 3}
-  BulletSpeed: 2
-  Reloading: 0
-  Bullet: {fileID: 0}
-  LowestTarget: 99999
-  waitTimeTillFire: 0.5333
 --- !u!50 &8835114225902824659
 Rigidbody2D:
   serializedVersion: 4

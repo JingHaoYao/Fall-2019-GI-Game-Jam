@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6584764741343345519}
+  - component: {fileID: 6584764741343345518}
   - component: {fileID: 6584764741343345516}
   - component: {fileID: 6584764741343345517}
-  - component: {fileID: 6584764741343345518}
   - component: {fileID: 6584764741343345553}
   m_Layer: 2
   m_Name: RRR Tower
@@ -34,6 +34,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6584764741343345518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6584764741343345514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1
+  RangeValue: 1
+  BulletDamage: 2
+  BulletType: {fileID: 3848214864047019860, guid: 35deaff672ef5d3489bd587185dbcf06,
+    type: 3}
+  BulletSpeed: 15
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.33333334
 --- !u!212 &6584764741343345516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102,28 +124,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6584764741343345518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6584764741343345514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadTime: 1
-  RangeValue: 1
-  BulletDamage: 2
-  BulletType: {fileID: 3848214864047019860, guid: 35deaff672ef5d3489bd587185dbcf06,
-    type: 3}
-  BulletSpeed: 15
-  Reloading: 0
-  Bullet: {fileID: 0}
-  LowestTarget: 99999
-  waitTimeTillFire: 0.33333334
 --- !u!58 &6584764741343345553
 CircleCollider2D:
   m_ObjectHideFlags: 0

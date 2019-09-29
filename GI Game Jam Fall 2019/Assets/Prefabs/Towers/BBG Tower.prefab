@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2912463901732199928}
+  - component: {fileID: 2912463901732199929}
   - component: {fileID: 2912463901732199935}
   - component: {fileID: 2912463901732199934}
-  - component: {fileID: 2912463901732199929}
   - component: {fileID: 2912463901732199931}
   - component: {fileID: 2912463901732199930}
   m_Layer: 2
@@ -35,6 +35,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2912463901732199929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2912463901732199933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1.7
+  RangeValue: 1.8
+  BulletDamage: 3
+  BulletType: {fileID: 7585093163047212303, guid: 2c37c6ad7ae0f4c45b01832826f32e9b,
+    type: 3}
+  BulletSpeed: 18
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.16666667
 --- !u!212 &2912463901732199935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103,28 +125,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2912463901732199929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912463901732199933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadTime: 1.7
-  RangeValue: 1.8
-  BulletDamage: 3
-  BulletType: {fileID: 7585093163047212303, guid: 2c37c6ad7ae0f4c45b01832826f32e9b,
-    type: 3}
-  BulletSpeed: 18
-  Reloading: 0
-  Bullet: {fileID: 0}
-  LowestTarget: 99999
-  waitTimeTillFire: 0.16666667
 --- !u!50 &2912463901732199931
 Rigidbody2D:
   serializedVersion: 4

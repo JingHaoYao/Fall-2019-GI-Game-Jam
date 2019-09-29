@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2714590512108751779}
+  - component: {fileID: -4029644232540937544}
   - component: {fileID: 5040507599251423599}
   - component: {fileID: 5039258034503685551}
-  - component: {fileID: -4029644232540937544}
   - component: {fileID: 4698770082239164747}
   - component: {fileID: 5232339361305396572}
   m_Layer: 2
@@ -35,6 +35,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4029644232540937544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922840105268015461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1
+  RangeValue: 1
+  BulletDamage: 2
+  BulletType: {fileID: 6641138641626771496, guid: 14996949fef964870bbafb2bdc68b20a,
+    type: 3}
+  BulletSpeed: 15
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.533333
 --- !u!212 &5040507599251423599
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -103,28 +125,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-4029644232540937544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8922840105268015461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadTime: 1
-  RangeValue: 1
-  BulletDamage: 2
-  BulletType: {fileID: 6641138641626771496, guid: 14996949fef964870bbafb2bdc68b20a,
-    type: 3}
-  BulletSpeed: 15
-  Reloading: 0
-  Bullet: {fileID: 0}
-  LowestTarget: 99999
-  waitTimeTillFire: 0.533333
 --- !u!58 &4698770082239164747
 CircleCollider2D:
   m_ObjectHideFlags: 0
