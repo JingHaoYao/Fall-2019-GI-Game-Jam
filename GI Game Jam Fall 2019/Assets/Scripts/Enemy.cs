@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public float speed;
-    public int what_path;
     Rigidbody2D rigidbody;
 
     PathTemplate path_template;
@@ -21,12 +20,15 @@ public class Enemy : MonoBehaviour
     public int enemyOrder = 0;
 
     public int whatPathToFollow = 0;
+
+    int currTileReached = 0;
   
     void Start()
     {
         path_template = FindObjectOfType<PathTemplate>();
         rigidbody = GetComponent<Rigidbody2D>();
-        path_to_follow = path_template.paths[Mathf.Clamp(whatPathToFollow, 0, path_template.paths.Length - 1)];
+        int whatPath = Mathf.Clamp(whatPathToFollow, 0, path_template.paths.Length - 1);
+        path_to_follow = path_template.paths[whatPath];
         target_tile = path_to_follow.path[0];
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -51,7 +53,15 @@ public class Enemy : MonoBehaviour
 
                 if (Vector2.Distance(transform.position, target_tile.transform.position) < 0.05f)
                 {
-                    target_tile = target_tile.nextTile;
+                    currTileReached++;
+                    if (currTileReached < path_to_follow.path.Length)
+                    {
+                        target_tile = path_to_follow.path[currTileReached];
+                    }
+                    else
+                    {
+                        target_tile = null;
+                    }
                 }
             }
             else

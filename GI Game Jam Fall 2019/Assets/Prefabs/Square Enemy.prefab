@@ -124,7 +124,7 @@ MonoBehaviour:
   deathParticles: {fileID: 8350122959358604530, guid: c6c44174cf27c954297cb609917c8329,
     type: 3}
   enemyOrder: 0
-  whatPathToFollow: 0
+  whatPathToFollow: 2
 --- !u!58 &3177373389107253711
 CircleCollider2D:
   m_ObjectHideFlags: 0

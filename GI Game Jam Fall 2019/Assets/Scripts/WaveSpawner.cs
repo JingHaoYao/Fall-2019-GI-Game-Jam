@@ -61,6 +61,7 @@ public class WaveSpawner : MonoBehaviour
         numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
         numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
         numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+        targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
         whatWave = 0;
         playerHealth = 20;
         setHealth();
@@ -124,6 +125,7 @@ public class WaveSpawner : MonoBehaviour
             numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
             numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
             numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+            currLevel.GetComponentInChildren<WaveInfo>();
             if (FindObjectOfType<TowerMenu>()) {
                 FindObjectOfType<TowerMenu>().gameObject.SetActive(false);
             }

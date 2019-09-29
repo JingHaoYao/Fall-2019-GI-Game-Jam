@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PathTile : Tile
 {
-    public PathTile nextTile, prevTile;
-
     void Start()
     {
         setOrderInLayer();
