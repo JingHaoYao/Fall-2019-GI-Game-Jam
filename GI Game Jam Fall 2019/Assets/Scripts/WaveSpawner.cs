@@ -29,6 +29,8 @@ public class WaveSpawner : MonoBehaviour
     public Text greenPixelText;
     public Text bluePixelText;
 
+    public GameObject beatGameScreen;
+
     int enemyNumber = 0;
 
     public void updatePixelText()
@@ -48,7 +50,7 @@ public class WaveSpawner : MonoBehaviour
         numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
         targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
         whatWaveCurrent = 0;
-        playerHealth = 20;
+        playerHealth = 5;
         setHealth();
         updatePixelText();
     }
@@ -61,6 +63,7 @@ public class WaveSpawner : MonoBehaviour
     public void playerDead()
     {
         FindObjectOfType<MusicManager>().fadeOut(whatLevel);
+        towerMenu.SetActive(false);
         whatLevel = 0;
         Destroy(currLevel);
         foreach(Enemy enemy in FindObjectsOfType<Enemy>())
@@ -132,19 +135,27 @@ public class WaveSpawner : MonoBehaviour
         {
             Destroy(currLevel);
             whatLevel++;
-            FindObjectOfType<MusicManager>().fadeOut(whatLevel - 1);
-            FindObjectOfType<MusicManager>().fadeIn(whatLevel);
-            whatWaveCurrent = 0;
-            currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
-            numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
-            numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
-            numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
-            targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
-            currLevel.GetComponentInChildren<WaveInfo>();
-            if (FindObjectOfType<TowerMenu>()) {
-                FindObjectOfType<TowerMenu>().gameObject.SetActive(false);
+            if (whatLevel >= levelList.Length)
+            {
+                beatGameScreen.SetActive(true);
             }
-            updatePixelText();
+            else
+            {
+                FindObjectOfType<MusicManager>().fadeOut(whatLevel - 1);
+                FindObjectOfType<MusicManager>().fadeIn(whatLevel);
+                whatWaveCurrent = 0;
+                currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
+                numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
+                numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
+                numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+                targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
+                currLevel.GetComponentInChildren<WaveInfo>();
+                if (FindObjectOfType<TowerMenu>())
+                {
+                    FindObjectOfType<TowerMenu>().gameObject.SetActive(false);
+                }
+                updatePixelText();
+            }
         }
         else
         {

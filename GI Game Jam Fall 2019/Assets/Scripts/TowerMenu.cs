@@ -197,6 +197,7 @@ public class TowerMenu : MonoBehaviour
 
     public void destroyTower()
     {
+        Camera.main.GetComponents<AudioSource>()[1].Play();
         if (targetTile.tower.GetComponent<Turret>())
         {
             Turret turret = targetTile.tower.GetComponent<Turret>();
