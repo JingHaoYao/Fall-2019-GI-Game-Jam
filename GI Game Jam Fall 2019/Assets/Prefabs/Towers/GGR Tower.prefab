@@ -106,6 +106,9 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   LowestTarget: 99999
   waitTimeTillFire: 0.5333
+  numRedPixels: 1
+  numGreenPixels: 2
+  numBluePixels: 0
 --- !u!50 &8835114225902824659
 Rigidbody2D:
   serializedVersion: 4

@@ -125,6 +125,9 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   LowestTarget: 99999
   waitTimeTillFire: 0.16666667
+  numRedPixels: 1
+  numGreenPixels: 0
+  numBluePixels: 2
 --- !u!58 &1340489741150709052
 CircleCollider2D:
   m_ObjectHideFlags: 0

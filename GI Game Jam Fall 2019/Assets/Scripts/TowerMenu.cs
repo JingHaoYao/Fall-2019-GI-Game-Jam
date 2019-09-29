@@ -17,6 +17,8 @@ public class TowerMenu : MonoBehaviour
     public GameObject particles;
     public GameObject Turret;
 
+    public GameObject destroyButton;
+
     int currentTile;
 
     void Start()
@@ -27,7 +29,7 @@ public class TowerMenu : MonoBehaviour
 
     public void addIcon(int whatPixel)
     {
-        if ((whatPixel == 1 && wavespawner.numRedPixels > 0) || (whatPixel == 2 && wavespawner.numGreenPixels > 0) || (whatPixel == 3 && wavespawner.numBluePixels > 0) && currentTile < 3) {
+        if (((whatPixel == 1 && wavespawner.numRedPixels > 0) || (whatPixel == 2 && wavespawner.numGreenPixels > 0) || (whatPixel == 3 && wavespawner.numBluePixels > 0) && currentTile < 3) && targetTile.tower == null) {
             if (this.gameObject.activeSelf == true)
             {
                 imageList[currentTile].enabled = true;
@@ -133,21 +135,113 @@ public class TowerMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach(Image icon in imageList)
+
+        StartCoroutine(waitForTowerAssignment());
+    }
+
+    IEnumerator waitForTowerAssignment()
+    {
+        while(targetTile == null)
         {
-            icon.enabled = false;
+            yield return null;
         }
 
-        numberGreenPixels = 0;
-        numberBluePixels = 0;
-        numberRedPixels = 0;
-
-        currentTile = 0;
-
-        foreach (Image image in imageList)
+        if (targetTile.tower == null)
         {
-            image.color = Color.white;
+
+            destroyButton.SetActive(false);
+
+            foreach (Image icon in imageList)
+            {
+                icon.transform.parent.gameObject.SetActive(true);
+                icon.enabled = false;
+            }
+
+            numberGreenPixels = 0;
+            numberBluePixels = 0;
+            numberRedPixels = 0;
+
+            currentTile = 0;
+
+            foreach (Image image in imageList)
+            {
+                image.color = Color.white;
+            }
         }
+        else
+        {
+            foreach(Image icon in imageList)
+            {
+                icon.transform.parent.gameObject.SetActive(false);
+            }
+
+            destroyButton.SetActive(true);
+        }
+    }
+
+    public void destroyTower()
+    {
+        if (targetTile.tower.GetComponent<Turret>())
+        {
+            Turret turret = targetTile.tower.GetComponent<Turret>();
+            List<int> pixelList = new List<int>();
+
+            for(int i = 0; i < turret.numRedPixels; i++)
+            {
+                pixelList.Add(1);
+            }
+
+            for (int i = 0; i < turret.numGreenPixels; i++)
+            {
+                pixelList.Add(2);
+            }
+
+            for (int i = 0; i < turret.numBluePixels; i++)
+            {
+                pixelList.Add(3);
+            }
+
+            for(int i = 0; i < 2; i++)
+            {
+                int returnPixel = pixelList[Random.Range(0, pixelList.Count)];
+                pixelList.Remove(returnPixel);
+                if(returnPixel == 1)
+                {
+                    wavespawner.numRedPixels++;
+                }
+                else if(returnPixel == 2)
+                {
+                    wavespawner.numGreenPixels++;
+                }
+                else
+                {
+                    wavespawner.numBluePixels++;
+                }
+            }
+        }
+        else
+        {
+            for(int i = 0; i < 2; i++)
+            {
+                int returnPixel = Random.Range(1, 4);
+                if (returnPixel == 1)
+                {
+                    wavespawner.numRedPixels++;
+                }
+                else if (returnPixel == 2)
+                {
+                    wavespawner.numGreenPixels++;
+                }
+                else
+                {
+                    wavespawner.numBluePixels++;
+                }
+            }
+        }
+        Destroy(targetTile.tower);
+        wavespawner.updatePixelText();
+        Instantiate(particles, targetTile.transform.position, Quaternion.identity);
+        this.gameObject.SetActive(false);
     }
 
     private void OnDisable()

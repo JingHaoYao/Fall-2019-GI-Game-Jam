@@ -47,7 +47,7 @@ public class TowerTile : Tile
             }
         }
 
-        if (Input.GetMouseButtonDown(0) && tower == null)
+        if (Input.GetMouseButtonDown(0))
         {
             if (clicked == false)
             {

@@ -19,6 +19,10 @@ public class Turret : MonoBehaviour
 
     GameObject currentTarget;
 
+    public int numRedPixels;
+    public int numGreenPixels;
+    public int numBluePixels;
+
     private void Start()
     {
         Range = GetComponent<CircleCollider2D>();
