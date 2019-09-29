@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 2d23da7038a9f5d4d90b53bf156e9694
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1959311296073382387
+    second: BBG Turret_0
+  - first:
+      213: -1687632919356198980
+    second: BBG Turret_1
+  - first:
+      213: 90051564794369801
+    second: BBG Turret_2
+  - first:
+      213: 9165397865823741538
+    second: BBG Turret_3
+  - first:
+      213: 559022810733104880
+    second: BBG Turret_4
+  - first:
+      213: -2908114597936836360
+    second: BBG Turret_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,7 +81,40 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +122,133 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BBG Turret_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 67
+        height: 69
+      alignment: 9
+      pivot: {x: 0.6336193, y: 0.43286994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c548820c2c52cc144820cd7c77ca1fe1
+      internalID: 1959311296073382387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBG Turret_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 137
+        width: 74
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5201437, y: 0.43515876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1134d352b31aa5f4c8a2dfcba19b70df
+      internalID: -1687632919356198980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBG Turret_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 66
+        height: 69
+      alignment: 9
+      pivot: {x: 0.6438301, y: 0.49100816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c105d0a4460ed49a77c3adee38e15c
+      internalID: 90051564794369801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBG Turret_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 69.333336
+        width: 71
+        height: 68.666664
+      alignment: 9
+      pivot: {x: 0.50113624, y: 0.4894276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789d1733cdf7d7b4d84eb6e0b020e3d8
+      internalID: 9165397865823741538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBG Turret_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333359
+        width: 71
+        height: 68.666664
+      alignment: 9
+      pivot: {x: 0.5981557, y: 0.54706573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512ef9753c9237047a3b67b448d2f666
+      internalID: 559022810733104880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBG Turret_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1.3333359
+        width: 71
+        height: 68.666664
+      alignment: 9
+      pivot: {x: 0.49931195, y: 0.54747707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f16ed134a492442af0cd13cd25a834
+      internalID: -2908114597936836360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -74,6 +74,35 @@ public class TowerMenu : MonoBehaviour
             {
                 targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[3];
             }
+            else
+            {
+                if(numberRedPixels == 2)
+                {
+                    if (numberGreenPixels == 1)
+                    {
+                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[4];
+                    }
+                    else
+                    {
+                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[6];
+                    }
+                }
+                else if(numberGreenPixels == 2)
+                {
+
+                }
+                else if(numberBluePixels == 2)
+                {
+                    if(numberRedPixels == 1)
+                    {
+                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[8];
+                    }
+                    else
+                    {
+                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[7];
+                    }
+                }
+            }
         }
     }
 

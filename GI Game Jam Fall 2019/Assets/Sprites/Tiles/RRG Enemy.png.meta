@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 6bdfd5c4b32ed5f4aa7c63b2ab06e15b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3560161578049470929
+    second: RRG Enemy_0
+  - first:
+      213: -2215417787626705472
+    second: RRG Enemy_1
+  - first:
+      213: 2079460039522107333
+    second: RRG Enemy_2
+  - first:
+      213: 4594789598015175342
+    second: RRG Enemy_3
+  - first:
+      213: -3079516577301927054
+    second: RRG Enemy_4
+  - first:
+      213: -2390070422538990268
+    second: RRG Enemy_5
+  - first:
+      213: 9202031859905388446
+    second: RRG Enemy_6
+  - first:
+      213: 2366084906372772177
+    second: RRG Enemy_7
+  - first:
+      213: -2236435175723833244
+    second: RRG Enemy_8
+  - first:
+      213: -1123668706646364250
+    second: RRG Enemy_9
+  - first:
+      213: 5609786397595710782
+    second: RRG Enemy_10
+  - first:
+      213: -3286238661048575131
+    second: RRG Enemy_11
+  - first:
+      213: -5893050124718008603
+    second: RRG Enemy_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -45,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,7 +143,280 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RRG Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.5158832, y: 0.43646705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c22db79ff1104409848f398139c683
+      internalID: -3560161578049470929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 412
+        width: 138
+        height: 138
+      alignment: 9
+      pivot: {x: 0.4778761, y: 0.44132355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5716f39dc4f9a98438728b2e0bdb3b18
+      internalID: -2215417787626705472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 412.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.44439763, y: 0.4395925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149428388c644c84eac2546d510737bf
+      internalID: 2079460039522107333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 412.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.40763938, y: 0.44031116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcedf0e16d828d346b738fb497377f00
+      internalID: 4594789598015175342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.51655936, y: 0.47583207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025efaceda074284a9177377984e190e
+      internalID: -3079516577301927054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 275.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.47922653, y: 0.47678244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63983522295e01a488d4d6a2557cd8c0
+      internalID: -2390070422538990268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 275.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.44394642, y: 0.47623336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c91a85f52d90d04aa02090aeaaf3332
+      internalID: 9202031859905388446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 275.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.40763184, y: 0.4756352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df023a0a8788d004fb3572b99062f68f
+      internalID: 2366084906372772177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.51649463, y: 0.51237094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785671068b588f74f91ac977407e9908
+      internalID: -2236435175723833244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 138.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.48004672, y: 0.5114885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7515192aa76bf40b5d44129a17b17c
+      internalID: -1123668706646364250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 138.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.44320267, y: 0.51225054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291cf3b6788b1094c9ed3878d6599a6e
+      internalID: 5609786397595710782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 138.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.40673074, y: 0.5118062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b8ca3dd0caf7140a0a110b255a3e53
+      internalID: -3286238661048575131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RRG Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 137.5
+        height: 137.5
+      alignment: 9
+      pivot: {x: 0.5163613, y: 0.5486705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ed16f8195bf594d9d350fa9122ab2f
+      internalID: -5893050124718008603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
