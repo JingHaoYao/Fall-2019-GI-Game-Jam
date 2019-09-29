@@ -7,7 +7,7 @@ public class WaveSpawner : MonoBehaviour
 {
     public GameObject circleEnemy, triangleEnemy, squareEnemy;
     public WaveInfo targetWaves;
-    int whatWave = 0;
+    public int whatWaveCurrent = 0;
     public GameObject button;
     public Text healthText;
 
@@ -62,7 +62,7 @@ public class WaveSpawner : MonoBehaviour
         numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
         numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
         targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
-        whatWave = 0;
+        whatWaveCurrent = 0;
         playerHealth = 20;
         setHealth();
         updatePixelText();
@@ -121,16 +121,17 @@ public class WaveSpawner : MonoBehaviour
         {
             Destroy(currLevel);
             whatLevel++;
+            whatWaveCurrent = 0;
             currLevel = Instantiate(levelList[whatLevel], Vector3.zero, Quaternion.identity);
             numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
             numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
             numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+            targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
             currLevel.GetComponentInChildren<WaveInfo>();
             if (FindObjectOfType<TowerMenu>()) {
                 FindObjectOfType<TowerMenu>().gameObject.SetActive(false);
             }
             updatePixelText();
-            whatWave = 0;
         }
         else
         {
@@ -156,9 +157,9 @@ public class WaveSpawner : MonoBehaviour
 
     public void startWave()
     {
-        StartCoroutine(spawnWave(whatWave));
+        StartCoroutine(spawnWave(whatWaveCurrent));
         button.SetActive(false);
-        whatWave++;
+        whatWaveCurrent++;
         GetComponents<AudioSource>()[1].Play();
     }
 }

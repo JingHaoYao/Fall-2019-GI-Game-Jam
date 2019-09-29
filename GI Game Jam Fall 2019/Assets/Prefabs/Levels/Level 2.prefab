@@ -95,8 +95,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920963956992619
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,8 +190,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920963962724258
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,8 +285,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964104145014
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,8 +380,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964205363217
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,8 +475,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964312830768
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,8 +570,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964319505017
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,8 +665,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964391510016
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,8 +760,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964415929349
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,8 +855,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964482750487
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,8 +950,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964648027372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,8 +1045,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964689347531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,8 +1140,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964705654967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,8 +1235,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964794270944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,8 +1330,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964816274986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,8 +1425,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920964831138823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,8 +1520,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965017531873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,8 +1615,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965113947568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,8 +1710,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965360189772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,8 +1805,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965363023832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,8 +1900,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965405431087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,8 +1995,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965519979951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,8 +2090,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965598117052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,8 +2185,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965628499653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,8 +2280,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &271920965782408832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,8 +2375,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &651018736730945707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,10 +3634,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveList:
   - waveGroups:
-    - numberCircles: 3
-      numberTriangles: 1
+    - numberCircles: 4
+      numberTriangles: 2
       numberSquares: 1
     waitInterval: 2
+  - waveGroups:
+    - numberCircles: 6
+      numberTriangles: 4
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 6
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 10
+      numberTriangles: 1
+      numberSquares: 0
+    - numberCircles: 4
+      numberTriangles: 4
+      numberSquares: 6
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 5
+    - numberCircles: 0
+      numberTriangles: 5
+      numberSquares: 0
+    - numberCircles: 4
+      numberTriangles: 4
+      numberSquares: 0
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 8
+    - numberCircles: 0
+      numberTriangles: 5
+      numberSquares: 0
+    - numberCircles: 6
+      numberTriangles: 0
+      numberSquares: 0
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 10
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 10
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 10
+      numberSquares: 0
+    waitInterval: 1
+  - waveGroups:
+    - numberCircles: 10
+      numberTriangles: 0
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 10
+    waitInterval: 0
+  - waveGroups:
+    - numberCircles: 0
+      numberTriangles: 0
+      numberSquares: 10
+    - numberCircles: 10
+      numberTriangles: 0
+      numberSquares: 0
+    - numberCircles: 0
+      numberTriangles: 10
+      numberSquares: 0
+    waitInterval: 1
   startingRedPixels: 3
   startingGreenPixels: 3
   startingBluePixels: 3
@@ -3787,8 +3805,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279523753240106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,8 +3900,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279523844806515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,8 +3995,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279523927614128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,8 +4090,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279524000846654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,8 +4185,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279524468076717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,8 +4280,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279524533714725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,8 +4375,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279524822049168
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,8 +4470,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279524975952705
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,8 +4565,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279525040470615
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,8 +4660,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279525246587356
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,8 +4755,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &1983279525523908139
 GameObject:
   m_ObjectHideFlags: 0
@@ -4854,8 +4850,6 @@ MonoBehaviour:
   pos: {x: 0, y: 0}
   tileSprite: {fileID: 0}
   orderInLayer: 1
-  nextTile: {fileID: 0}
-  prevTile: {fileID: 0}
 --- !u!1 &2522871084178763558
 GameObject:
   m_ObjectHideFlags: 0

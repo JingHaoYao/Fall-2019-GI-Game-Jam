@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 0.5
+  ReloadTime: 0.8
   RangeValue: 0.6
   BulletDamage: 1
   BulletType: {fileID: 136152709707705186, guid: 69de6d90beacc4243aaf27fe7bd4f971,
@@ -57,6 +57,9 @@ MonoBehaviour:
   Bullet: {fileID: 0}
   LowestTarget: 99999
   waitTimeTillFire: 0
+  numRedPixels: 0
+  numGreenPixels: 3
+  numBluePixels: 0
 --- !u!212 &400244901075376040
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -125,31 +128,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &400244901075376045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400244901075376042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadTime: 0.5
-  RangeValue: 0.6
-  BulletDamage: 1
-  BulletType: {fileID: 136152709707705186, guid: 69de6d90beacc4243aaf27fe7bd4f971,
-    type: 3}
-  BulletSpeed: 10
-  Reloading: 0
-  Bullet: {fileID: 0}
-  LowestTarget: 99999
-  waitTimeTillFire: 0
-  numRedPixels: 0
-  numGreenPixels: 3
-  numBluePixels: 0
 --- !u!58 &400244901075376046
 CircleCollider2D:
   m_ObjectHideFlags: 0

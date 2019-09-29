@@ -43,7 +43,7 @@ public class TowerTile : Tile
             }
             else if (tower.GetComponent<RGBTower>())
             {
-                rangeMeter.transform.localScale = new Vector3(2.5f * 18, 2.5f * 18);
+                rangeMeter.transform.localScale = new Vector3(tower.GetComponent<RGBTower>().rangeValue * 18, tower.GetComponent<RGBTower>().rangeValue * 18);
             }
         }
 
