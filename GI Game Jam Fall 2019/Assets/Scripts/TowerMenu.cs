@@ -7,9 +7,9 @@ public class TowerMenu : MonoBehaviour
 {
     public Image[] imageList;
     public Sprite[] pixelIcons;
-    public int numberRedPixels;
-    public int numberBluePixels;
-    public int numberGreenPixels;
+    public int numberRedPixels = 0;
+    public int numberBluePixels = 0;
+    public int numberGreenPixels = 0;
     public WaveSpawner wavespawner;
     public TowerList TowerList;
     public TowerTile targetTile;
@@ -117,6 +117,9 @@ public class TowerMenu : MonoBehaviour
                     }
                 }
             }
+            numberGreenPixels = 0;
+            numberBluePixels = 0;
+            numberRedPixels = 0;
             StartCoroutine(craft(spawnTower));
         }
     }
@@ -152,6 +155,8 @@ public class TowerMenu : MonoBehaviour
         {
             yield return null;
         }
+        returnPixels();
+
         GetComponents<AudioSource>()[0].Play();
         numberGreenPixels = 0;
         numberBluePixels = 0;
@@ -260,13 +265,19 @@ public class TowerMenu : MonoBehaviour
         returnPixels();
     }
 
+
     public void returnPixels()
     {
+        wavespawner = FindObjectOfType<WaveSpawner>();
         if (currentTile < 3 && targetTile.tower == null)
         {
             wavespawner.numRedPixels += numberRedPixels;
             wavespawner.numBluePixels += numberBluePixels;
             wavespawner.numGreenPixels += numberGreenPixels;
+
+            numberRedPixels = 0;
+            numberBluePixels = 0;
+            numberGreenPixels = 0;
             wavespawner.updatePixelText();
         }
         currentTile = 0;

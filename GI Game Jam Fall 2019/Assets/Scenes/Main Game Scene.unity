@@ -798,6 +798,9 @@ MonoBehaviour:
   levelList:
   - {fileID: 136864457021664493, guid: 8b055cb6ad310d346ad6145dc571205f, type: 3}
   - {fileID: 1804118179517270906, guid: e4d4320e8b1493e43847568346eaf35f, type: 3}
+  - {fileID: 4024093941446535313, guid: ee2b9bd198f1edb48982a67eb1bf2f3d, type: 3}
+  - {fileID: 2345443081338100686, guid: cd6bce04ad157fd448906407d8ebff51, type: 3}
+  - {fileID: 2473535349815979516, guid: c6a8781503ba448f19dce32d57655da5, type: 3}
   currLevel: {fileID: 0}
   whatLevel: 0
   playerHealth: 1
@@ -1807,9 +1810,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2204e1fab18167046a1a7535c1e10fc3, type: 3}
   - {fileID: 21300000, guid: ab0052f7c1f1a5843b11d2f9a32a1b98, type: 3}
   - {fileID: 21300000, guid: 6701eeb04c7f3d541bd9002ca7bccc4d, type: 3}
-  numberRedPixels: 2
-  numberBluePixels: 2
-  numberGreenPixels: 2
+  numberRedPixels: 0
+  numberBluePixels: 0
+  numberGreenPixels: 0
   wavespawner: {fileID: 0}
   TowerList: {fileID: 0}
   targetTile: {fileID: 0}
