@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 00c4821ab441e46cba4f653aa5f449ba
+guid: b66c9ecd28d4cab4ca44815c16a1437e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3160174752582821082
-    second: BBR Tower_0
+      213: -976106206489844699
+    second: BBR_Tower_0
   - first:
-      213: 6519127854251918646
-    second: BBR Tower_1
+      213: 2508317108580111700
+    second: BBR_Tower_1
   - first:
-      213: -187500548675179589
-    second: BBR Tower_2
+      213: -1350789796401460213
+    second: BBR_Tower_2
   - first:
-      213: -4283869835451171954
-    second: BBR Tower_3
+      213: -8600710186750186029
+    second: BBR_Tower_3
   - first:
-      213: -1226146639117498457
-    second: BBR Tower_4
+      213: 4599089061330162962
+    second: BBR_Tower_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,110 +95,132 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BBR Tower_0
+      name: BBR_Tower_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 137
-        width: 69
-        height: 69
+        y: 278.6667
+        width: 143
+        height: 139.33333
       alignment: 9
-      pivot: {x: 0.3298036, y: 0.432293}
+      pivot: {x: 0.51317966, y: 0.4492758}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c01c17df571a77408aa59d9d7706d04
-      internalID: -3160174752582821082
+      spriteID: 7b1e37b9a0b4b3141af586bd0b656c05
+      internalID: -976106206489844699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BBR Tower_1
+      name: BBR_Tower_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 137.33334
-        width: 71
-        height: 68.666664
+        x: 143
+        y: 278.6667
+        width: 143
+        height: 139.33333
       alignment: 9
-      pivot: {x: 0.18385907, y: 0.43131983}
+      pivot: {x: 0.43245447, y: 0.4475849}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ecd61b52399d24b940e1edac552ad0
-      internalID: 6519127854251918646
+      spriteID: f3e918a026ee38f4595d5895fcbe474a
+      internalID: 2508317108580111700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BBR Tower_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 69
-        width: 67
-        height: 69
-      alignment: 9
-      pivot: {x: 0.2674057, y: 0.48929176}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1a0352fc908aa459aaa3be1055ec13
-      internalID: -187500548675179589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BBR Tower_3
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 69
-        width: 73
-        height: 69
-      alignment: 9
-      pivot: {x: 0.17625459, y: 0.49161175}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c13db602ed77a40b7704059f66dc2a
-      internalID: -4283869835451171954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BBR Tower_4
+      name: BBR_Tower_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.3333359
-        width: 71
-        height: 68.666664
+        y: 139.66667
+        width: 143
+        height: 139.33333
       alignment: 9
-      pivot: {x: 0.26905337, y: 0.5458293}
+      pivot: {x: 0.48846787, y: 0.49492764}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ea75e1a5bdabba4a852e099215251c4
-      internalID: -1226146639117498457
+      spriteID: 044541de35a02ad448ba22beac58f174
+      internalID: -1350789796401460213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBR_Tower_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 139.66667
+        width: 143
+        height: 139.33333
+      alignment: 9
+      pivot: {x: 0.4289631, y: 0.49534643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce57e4eb6340394e92cf45c76e07653
+      internalID: -8600710186750186029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BBR_Tower_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 143
+        height: 139
+      alignment: 9
+      pivot: {x: 0.51360285, y: 0.54353774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b6c92c3b10e04eb8e4a6c6e37479d
+      internalID: 4599089061330162962
       vertices: []
       indices: 
       edges: []
@@ -206,7 +228,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7f88c09bf3af14e029797aa1f27400d2
+    spriteID: 34e93a1a5894cde40af0826577b23107
     internalID: 0
     vertices: []
     indices: 

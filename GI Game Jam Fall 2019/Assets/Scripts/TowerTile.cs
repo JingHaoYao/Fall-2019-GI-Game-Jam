@@ -7,12 +7,14 @@ public class TowerTile : Tile
     public GameObject tower;
     public WaveSpawner spawner;
     public bool clicked = false;
+    GameObject rangeMeter;
 
 
     private void Start()
     {
         spawner = FindObjectOfType<WaveSpawner>();
         setOrderInLayer();
+        rangeMeter = GameObject.Find("Range Indicator");
     }
 
     IEnumerator click()
@@ -30,6 +32,21 @@ public class TowerTile : Tile
 
     private void OnMouseOver()
     {
+        if (tower != null)
+        {
+            rangeMeter.transform.position = transform.position;
+
+            if (tower.GetComponent<Turret>())
+            {
+                float range = tower.GetComponent<Turret>().RangeValue;
+                rangeMeter.transform.localScale = new Vector3(range *18, range * 18);
+            }
+            else if (tower.GetComponent<RGBTower>())
+            {
+                rangeMeter.transform.localScale = new Vector3(2.5f * 18, 2.5f * 18);
+            }
+        }
+
         if (Input.GetMouseButtonDown(0) && tower == null)
         {
             if (clicked == false)
@@ -53,5 +70,10 @@ public class TowerTile : Tile
                 spawner.towerMenu.SetActive(false);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        rangeMeter.transform.position = new Vector3(-100, 0);
     }
 }
