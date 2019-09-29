@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 10
+  ReloadTime: 1.2
   RangeValue: 0.8
   BulletDamage: 4
   BulletType: {fileID: 3761614092464365788, guid: ebfeda361faa141f6bfe0031d45254bc,

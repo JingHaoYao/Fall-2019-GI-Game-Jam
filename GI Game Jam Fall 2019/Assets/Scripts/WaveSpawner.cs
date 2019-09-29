@@ -116,7 +116,7 @@ public class WaveSpawner : MonoBehaviour
 
         button.SetActive(true);
 
-        if(whatWave >= targetWaves.waveList.Length)
+        if(whatWave >= targetWaves.waveList.Length - 1)
         {
             Destroy(currLevel);
             whatLevel++;

@@ -19,12 +19,14 @@ public class Enemy : MonoBehaviour
     public GameObject deathParticles;
 
     public int enemyOrder = 0;
+
+    public int whatPathToFollow = 0;
   
     void Start()
     {
         path_template = FindObjectOfType<PathTemplate>();
         rigidbody = GetComponent<Rigidbody2D>();
-        path_to_follow = path_template.paths[0];
+        path_to_follow = path_template.paths[Mathf.Clamp(whatPathToFollow, 0, path_template.paths.Length - 1)];
         target_tile = path_to_follow.path[0];
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
