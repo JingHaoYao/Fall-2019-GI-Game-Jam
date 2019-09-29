@@ -1235,9 +1235,9 @@ MonoBehaviour:
   playerHealth: 1
   deathScreen: {fileID: 721981491}
   towerMenu: {fileID: 483872679}
-  numRedPixels: 2
-  numGreenPixels: 2
-  numBluePixels: 2
+  numRedPixels: 0
+  numGreenPixels: 0
+  numBluePixels: 0
   redPixelText: {fileID: 2038013367}
   greenPixelText: {fileID: 1556910731}
   bluePixelText: {fileID: 563305847}

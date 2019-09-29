@@ -50,7 +50,7 @@ public class WaveSpawner : MonoBehaviour
         numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
         targetWaves = currLevel.GetComponentInChildren<WaveInfo>();
         whatWaveCurrent = 0;
-        playerHealth = 20;
+        playerHealth = 5;
         setHealth();
         updatePixelText();
     }
