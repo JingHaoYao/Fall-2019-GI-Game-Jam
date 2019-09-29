@@ -124,6 +124,9 @@ public class WaveSpawner : MonoBehaviour
             numRedPixels = currLevel.GetComponentInChildren<WaveInfo>().startingRedPixels;
             numGreenPixels = currLevel.GetComponentInChildren<WaveInfo>().startingGreenPixels;
             numBluePixels = currLevel.GetComponentInChildren<WaveInfo>().startingBluePixels;
+            if (FindObjectOfType<TowerMenu>()) {
+                FindObjectOfType<TowerMenu>().gameObject.SetActive(false);
+            }
             updatePixelText();
             whatWave = 0;
         }

@@ -47,12 +47,15 @@ public class TowerTile : Tile
             }
         }
 
-        if (Input.GetMouseButtonDown(0) && tower == null)
+        if (Input.GetMouseButtonDown(0))
         {
             if (clicked == false)
             {
                 StartCoroutine(click());
                 spawner.towerMenu.SetActive(true);
+
+                spawner.towerMenu.GetComponent<TowerMenu>().targetTile = this;
+                spawner.towerMenu.GetComponent<TowerMenu>().towerAssignment();
                 spawner.towerMenu.transform.position = Camera.main.WorldToScreenPoint(transform.position);
                 clicked = true;
                 foreach(TowerTile tile in FindObjectsOfType<TowerTile>())
@@ -60,8 +63,6 @@ public class TowerTile : Tile
                     if(tile != this)
                         tile.clicked = false;
                 }
-
-                spawner.towerMenu.GetComponent<TowerMenu>().targetTile = this;
             }
             else
             {

@@ -16,6 +16,7 @@ public class SprayBullet : TowerProjectile
             bullet.GetComponent<TowerProjectile>().speed = speed;
             bullet.GetComponent<TowerProjectile>().direction = angle;
         }
+        Destroy(this.gameObject);
     }
 
 }

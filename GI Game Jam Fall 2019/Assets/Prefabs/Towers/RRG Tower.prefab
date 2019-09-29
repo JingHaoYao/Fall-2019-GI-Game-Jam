@@ -125,6 +125,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &147504257320481535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147504257320481523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1.2
+  RangeValue: 0.7
+  BulletDamage: 2
+  BulletType: {fileID: 7183798455874219835, guid: 6602248c1eaef8444b0e61e910c3820e,
+    type: 3}
+  BulletSpeed: 12
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.5833333
+  numRedPixels: 2
+  numGreenPixels: 1
+  numBluePixels: 0
 --- !u!50 &147504257320481533
 Rigidbody2D:
   serializedVersion: 4

@@ -125,6 +125,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9136245767925705820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522566534159015148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b421fd7155c534c82a4ee6d1ad933d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadTime: 1.5
+  RangeValue: 3
+  BulletDamage: 1
+  BulletType: {fileID: 8902298070421246681, guid: df0286cf23b1e8b4f8118cce01e684b4,
+    type: 3}
+  BulletSpeed: 30
+  Reloading: 0
+  Bullet: {fileID: 0}
+  LowestTarget: 99999
+  waitTimeTillFire: 0.16666667
+  numRedPixels: 1
+  numGreenPixels: 0
+  numBluePixels: 2
 --- !u!58 &1340489741150709052
 CircleCollider2D:
   m_ObjectHideFlags: 0
