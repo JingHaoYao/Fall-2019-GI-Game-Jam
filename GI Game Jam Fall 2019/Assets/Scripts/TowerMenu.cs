@@ -58,23 +58,23 @@ public class TowerMenu : MonoBehaviour
 
         if(currentTile == 3)
         {
-            StartCoroutine(craft());
+            GameObject spawnTower = null;
             targetTile.clicked = false;
             if (numberBluePixels == 3)
             {
-                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[0];
+                spawnTower = TowerList.GetComponent<TowerList>().Turrets[0];
             }
             else if (numberRedPixels == 3)
             {
-                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[2];
+                spawnTower = TowerList.GetComponent<TowerList>().Turrets[2];
             }
             else if (numberGreenPixels == 3)
             {
-                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[1];
+                spawnTower = TowerList.GetComponent<TowerList>().Turrets[1];
             }
             else if (numberGreenPixels == 1 && numberRedPixels == 1 && numberBluePixels == 1)
             {
-                targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[3];
+                spawnTower = TowerList.GetComponent<TowerList>().Turrets[3];
             }
             else
             {
@@ -82,40 +82,41 @@ public class TowerMenu : MonoBehaviour
                 {
                     if (numberGreenPixels == 1)
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[5];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[5];
                     }
                     else
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[6];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[6];
                     }
                 }
                 else if (numberGreenPixels == 2)
                 {
-                    if(numberRedPixels == 1)
+                    if (numberRedPixels == 1)
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[4];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[4];
                     }
                     else
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[9];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[9];
                     }
                 }
                 else if (numberBluePixels == 2)
                 {
                     if (numberRedPixels == 1)
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[8];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[8];
                     }
                     else
                     {
-                        targetTile.tower = TowerList.GetComponent<TowerList>().Turrets[7];
+                        spawnTower = TowerList.GetComponent<TowerList>().Turrets[7];
                     }
                 }
             }
+            StartCoroutine(craft(spawnTower));
         }
     }
 
-    IEnumerator craft()
+    IEnumerator craft(GameObject tower)
     {
         for(int i = 0; i < 10; i++)
         {
@@ -125,7 +126,8 @@ public class TowerMenu : MonoBehaviour
             }
             yield return new WaitForSeconds(.05f);
         }
-        Turret = Instantiate(targetTile.tower);
+        Turret = Instantiate(tower);
+        targetTile.tower = Turret;
         Turret.transform.parent = targetTile.transform;
         Turret.transform.localPosition = new Vector3(0, 0, 0);
         Turret.transform.localScale = new Vector3(1, 1, 1);
@@ -133,9 +135,8 @@ public class TowerMenu : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    private void OnEnable()
+    public void towerAssignment()
     {
-
         StartCoroutine(waitForTowerAssignment());
     }
 
@@ -207,15 +208,15 @@ public class TowerMenu : MonoBehaviour
                 pixelList.Remove(returnPixel);
                 if(returnPixel == 1)
                 {
-                    wavespawner.numRedPixels++;
+                    wavespawner.numRedPixels += 1;
                 }
                 else if(returnPixel == 2)
                 {
-                    wavespawner.numGreenPixels++;
+                    wavespawner.numGreenPixels += 1;
                 }
                 else
                 {
-                    wavespawner.numBluePixels++;
+                    wavespawner.numBluePixels += 1;
                 }
             }
         }
@@ -246,7 +247,7 @@ public class TowerMenu : MonoBehaviour
 
     private void OnDisable()
     {
-        if(currentTile < 3)
+        if(currentTile < 3 && targetTile.tower == null)
         {
             wavespawner.numRedPixels += numberRedPixels;
             wavespawner.numBluePixels += numberBluePixels;
