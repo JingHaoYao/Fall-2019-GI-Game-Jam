@@ -124,17 +124,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 394.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.46428987, y: 0.45996162}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781d75f4a4c7d4f0ba137fa499b25d35
+      spriteID: 0ab2275f4a1d7d641b8aa3e901706d46
       internalID: -2286924887949732257
       vertices: []
       indices: 
@@ -144,18 +144,18 @@ TextureImporter:
       name: GGR Tower_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 394.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.4361563, y: 0.46170217}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dba9fd5b529b7470c98094b5c8299c6c
+      spriteID: 54b8a2fda55db3549b9a62c8245b994d
       internalID: 1441403666364709009
       vertices: []
       indices: 
@@ -165,18 +165,18 @@ TextureImporter:
       name: GGR Tower_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 394.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.40303236, y: 0.4569201}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91cbc723ea0b4fffa051fe064e31f6f
+      spriteID: f85df19a75e2d464caef80d1309dfa5c
       internalID: 8628641278434704880
       vertices: []
       indices: 
@@ -187,17 +187,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 263.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.46420792, y: 0.48104244}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ab307be47fa4325a47b7a3abf913ee
+      spriteID: cddff1a2dea34174dbf9ce542c0aa8db
       internalID: -6291627589688218132
       vertices: []
       indices: 
@@ -207,18 +207,18 @@ TextureImporter:
       name: GGR Tower_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 263.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.43378466, y: 0.4837505}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5cc92e0200446aeb61703b7ca73365
+      spriteID: 17ad229387e0ab346a59db7b3174d32c
       internalID: 7674777310391223957
       vertices: []
       indices: 
@@ -228,18 +228,18 @@ TextureImporter:
       name: GGR Tower_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 263.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.40345243, y: 0.48210928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdd6e0e28fce94cbeb6c1a0a9b87bc0b
+      spriteID: 1d23802417889ba4a870a383eb9d1865
       internalID: 6517760656443429331
       vertices: []
       indices: 
@@ -250,17 +250,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 132.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.46361357, y: 0.50415576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b969dc6b83a384455afa1ca72134f664
+      spriteID: c880dd2826a294044a71518d65c0e52e
       internalID: -4530157506364540297
       vertices: []
       indices: 
@@ -270,18 +270,18 @@ TextureImporter:
       name: GGR Tower_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 132
+        width: 133
+        height: 132
+      alignment: 9
+      pivot: {x: 0.43233806, y: 0.50654477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3163fa1607214bf5a604cafacb3f4ff
+      spriteID: 4e92fd567e3f83540a1af71bbe5e0e2e
       internalID: 6614989702141685415
       vertices: []
       indices: 
@@ -291,18 +291,18 @@ TextureImporter:
       name: GGR Tower_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 132.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.37393102, y: 0.5059855}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55f4545e1ed174e729c6baf802588da0
+      spriteID: 9f299e27707426c4d99fe52ac8e00960
       internalID: 965241390348544434
       vertices: []
       indices: 
@@ -313,17 +313,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 1.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.45553222, y: 0.5272695}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474fed8eef39342119d3fcf963699fb1
+      spriteID: dccf6581f749d6b4bb10ec5a9fea4adc
       internalID: -2702654825289871037
       vertices: []
       indices: 
@@ -333,18 +333,18 @@ TextureImporter:
       name: GGR Tower_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 1.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.43330482, y: 0.5264491}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d0799e096cbc4a8aabdb257c58c1a90
+      spriteID: f309a511ca8b3b44c885be1b21f69fe2
       internalID: 8873285273890051074
       vertices: []
       indices: 
@@ -354,18 +354,18 @@ TextureImporter:
       name: GGR Tower_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 1.5
+        width: 132.66667
+        height: 131.5
+      alignment: 9
+      pivot: {x: 0.40308136, y: 0.5272435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf5a5d273b67a4937b4f75274d1ee18b
+      spriteID: f90817602b7093e4aaefee52a64bf42a
       internalID: -5025358113958335
       vertices: []
       indices: 

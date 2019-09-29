@@ -19,7 +19,10 @@ public class MusicManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         levelMusics[index].volume = 0;
-        levelMusics[index].Stop();
+        if (index != 0)
+        {
+            levelMusics[index].Stop();
+        }
     }
 
     IEnumerator fadeInMusic(int index)

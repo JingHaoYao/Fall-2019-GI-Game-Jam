@@ -21,6 +21,7 @@ public class RGBTower : MonoBehaviour
             {
                 currentTurretBonuses.Add(Target.gameObject.GetComponent<Turret>());
                 Target.gameObject.GetComponent<Turret>().ReloadTime *= 0.75f;
+                Target.gameObject.GetComponent<Turret>().BulletDamage += 1;
             }
         }
     }
@@ -30,6 +31,7 @@ public class RGBTower : MonoBehaviour
         foreach(Turret turret in currentTurretBonuses)
         {
             turret.ReloadTime /= 0.75f;
+            turret.BulletDamage -= 1;
         }
     }
 
